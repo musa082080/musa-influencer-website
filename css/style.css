@@ -1,0 +1,94 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap");
+/* common css */
+body {
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+main {
+  width: 1300px;
+  margin: 0 auto;
+}
+/* header css start */
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #3a3a3a;
+}
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#navbar li {
+  padding: 0 20px;
+}
+#navbar li a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3a3a3a;
+}
+/* header css end */
+/* top banner css start */
+.top-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner-left {
+  width: 580px;
+}
+.banner-left h1 {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 70px;
+  color: #3a3a3a;
+  margin-bottom: 15px;
+}
+.banner-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 6px 15px;
+  background-color: #e02c6d;
+  border-radius: 41px;
+}
+.banner-btn span {
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 8px;
+}
+.banner-btn i {
+  font-size: 24px;
+  color: #ffffff;
+}
+.banner-right {
+  overflow: hidden;
+}
+.banner-right:hover .banner-img {
+  transform: scale(1.2);
+}
+.banner-right .banner-img {
+  width: 440px;
+  height: 415px;
+  background-size: cover;
+  background-position: center;
+  transition: 0.3s;
+  overflow: hidden;
+}
+/* top banner css end */
+/* focused on area start here */
