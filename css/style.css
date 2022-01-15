@@ -12,13 +12,14 @@ li {
 }
 main {
   width: 1300px;
-  margin: 0 auto;
+  margin: auto;
 }
 /* header css start */
 #header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 30px;
 }
 .logo h3 {
   font-weight: 700;
@@ -46,6 +47,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 .banner-left {
   width: 580px;
@@ -91,4 +93,23 @@ main {
   overflow: hidden;
 }
 /* top banner css end */
-/* focused on area start here */
+/* ecommerce section css start */
+.ecommerce-area {
+  width: 1110px;
+  margin: auto;
+  background: linear-gradient(
+    90deg,
+    rgba(192, 204, 218, 0.1) 0%,
+    rgba(192, 204, 218, 0.6) 50.38%,
+    rgba(192, 204, 218, 0.1) 100%
+  );
+  margin-bottom: 60px;
+}
+.images {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  justify-items: center;
+  padding: 20px;
+}
+/* ecommerce section css end */
