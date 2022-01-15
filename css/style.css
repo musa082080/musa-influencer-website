@@ -50,12 +50,13 @@ main {
   justify-content: space-between;
   margin-bottom: 30px;
 }
-.banner-left {
-  width: 580px;
+.banner-half {
+  width: 50%;
+  padding-right: 10%;
 }
-.banner-left h1 {
+.banner-half h1 {
   font-weight: 700;
-  font-size: 52px;
+  font-size: 49px;
   color: #3a3a3a;
   margin-bottom: 15px;
 }
@@ -63,7 +64,7 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 6px 15px;
+  padding: 10px 20px;
   background-color: #e02c6d;
   border-radius: 41px;
   border: none;
@@ -78,27 +79,23 @@ main {
   font-size: 24px;
   color: #ffffff;
 }
-.banner-right {
+.banner-half {
   overflow: hidden;
-  border: 1px solid #ddd;
-  background-image: url("img/Circle desing.jpg");
 }
-.banner-right:hover .banner-img {
+.banner-half:hover .banner-img {
   transform: scale(1.1);
 }
-.banner-right .banner-img {
-  width: 440px;
-  height: 415px;
+.banner-half .banner-img {
   background-size: cover;
-  background-position: center;
+  background-position: right;
   transition: 0.3s;
   overflow: hidden;
+  border: 1px solid #ddd;
+  margin: 0 150px;
 }
 /* top banner css end */
 /* ecommerce section css start */
 .ecommerce-area {
-  width: 1110px;
-  margin: auto;
   background: linear-gradient(
     90deg,
     rgba(192, 204, 218, 0.1) 0%,
@@ -118,10 +115,6 @@ main {
 /* product section css start */
 #product {
   text-align: center;
-}
-#product.container {
-  width: 1047px;
-  margin: auto;
 }
 #product .section-title {
   font-weight: 600;
@@ -185,23 +178,67 @@ main {
   color: rgb(243, 181, 25);
   line-height: 14px;
 }
-.pro-sec-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  background-color: #fff;
+.pro-btn-des {
+  text-align: right;
+  padding: 40px 0;
 }
-.pro-sec-btn span {
+.pro-btn-des a {
   color: #e02c6d;
-  font-weight: 700;
   font-size: 14px;
-  margin-right: 12px;
+  font-weight: 700;
 }
-.pro-sec-btn i {
+.pro-btn-des i {
+  margin-left: 15px;
   color: #e02c6d;
 }
 /* product section css end */
+/* Shop Page */
+#feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#feature .fe-box {
+  width: 156px;
+  text-align: center;
+  padding: 15px 15px;
+  box-shadow: 20px 20px 34px rgb(0 0 0 / 3%);
+  border: 1px solid #cce7d0;
+  border-radius: 4px;
+  margin: 15px 0;
+}
+#feature .fe-box:hover {
+  box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+#feature .fe-box img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+#feature .fe-box h6 {
+  display: inline-block;
+  padding: 9px 8px 6px 8px;
+  line-height: 1;
+  border-radius: 4px;
+  color: #088178;
+  background-color: #fddde4;
+}
+#feature .fe-box:nth-child(2) h6 {
+  background-color: #cdebbc;
+}
+#feature .fe-box:nth-child(3) h6 {
+  background-color: #d1e8f2;
+}
+#feature .fe-box:nth-child(4) h6 {
+  background-color: #cdd4f8;
+}
+#feature .fe-box:nth-child(5) h6 {
+  background-color: #f6dbf6;
+}
+#feature .fe-box:nth-child(6) h6 {
+  background-color: #fff2e5;
+}
+/* footer section start here */
 #footer-area {
   text-align: center;
   padding: 30px 0;
@@ -218,3 +255,26 @@ main {
   font-size: 14px;
   line-height: 16px;
 }
+.social-icon i {
+  background-color: #22213c;
+  padding: 12px;
+  line-height: 22px;
+  border-radius: 50%;
+  font-size: 18px;
+  margin-left: 24px;
+  transition: 0.3s;
+  text-align: center;
+  color: #fff;
+}
+.fab,
+.far {
+  font-weight: 400;
+}
+
+.fab {
+  font-family: "Font Awesome 5 Brands";
+}
+.social-icon i:hover {
+  background-color: chocolate;
+}
+/* footer section start end */
